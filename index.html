@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Crystal Collector Game</title>
     <!--css stylesheet-->
-    <!--link rel="stylesheet" href="assets/css/main.css"-->
+    <link rel="stylesheet" href="assets/css/style.css">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--reset.css-->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!--jquery-->
+    <!--java script-->
     <script defer src="assets/javascript/game.js"></script>
+    <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -20,12 +21,12 @@
 
 <body>
     <!--Title-->
-    <div class="shadow container-sm title-cont mx-auto m-2 p-3 col-8-sm bg-danger text-center text-white">
+    <div class="shadow container-sm title-cont mx-auto p-3 col-8-sm bg-danger text-center text-white">
         <h1>Crystal Collector</h1>
     </div>
 
       <!--Instructions and start button-->
-      <div class="shadow container-sm inst-cont p-3 col-8-sm bg-secondary text-white">
+      <div class="container-sm inst-cont p-3 col-8-sm text-white">
         <h5>You will be given a random number at the start of the game.</h5>
         <br>
         <h5>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</h5>
@@ -64,7 +65,7 @@
         </div>
 
         <!--Gems-->
-        <div class="container-lg mx-auto m-3 container-sm align-items-center pl-2 ml-1">
+        <div class="container-lg container-gem mx-auto m-3 container-sm align-items-center pl-2 ml-1">
             <input class="gem-btn p-3" type="image" src="assets/images/images (1).jpeg">
             <input class="gem-btn p-3" type="image" src="assets/images/images.jpeg">
             <input class="gem-btn p-3" type="image" src="assets/images/images (3).jpeg">
