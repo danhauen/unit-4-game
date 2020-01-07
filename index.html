@@ -12,7 +12,7 @@
 
 <body>
     <!--Title-->
-    <div class="shadow container-sm title-cont mx-auto m-3 p-3 col-8-sm bg-danger text-center text-white">
+    <div class="shadow container-sm title-cont mx-auto m-2 p-3 col-8-sm bg-danger text-center text-white">
         <h1>Crystal Collector</h1>
     </div>
 
@@ -30,37 +30,37 @@
         <br>
         <h5>Good Luck!</h5>
         <br>   
-        <button type="button" class="btn btn-warning">Reset</button>  
+        <button id="reset-btn" class="btn btn-warning">Reset</button>  
       </div>
         
         
         <div class="shadow container-sm bd-highlight">
-          <div class="row row-1">
+          <div class="row row-1 mt-2">
                 <!--Random number-->
                 <div class="col-4 randNum p-3 bg-info text-white text-center">
                     <h5>Score to Match</h5>
-                    <h1>0</h1>
+                    <h1><span id="randNum-display">0</span></h1>
                     </div>
                 <!--Player Score-->
                 <div class="col-4 yourScore p-3 bg-info text-white text-center">
                     <h5>Your Score</h5>
-                    <h1>0</h1>
+                    <h1><span id="score-display">0</span></h1>
                     </div>
                 <!--Win Loss-->
                 <div class="col-4 winLoss p-3 bg-warning text-left">
-                    <h5>Wins:</h5>
+                    <h5>Wins: <span id="wins-display">0</span></h5>
                     <br>
-                    <h5>Losses:</h5>
+                    <h5>Losses: <span id="loss-display">0</span></h5>
                 </div>
           </div> 
         </div>
 
         <!--Gems-->
-        <div class="container-lg mx-auto pl-5 m-0 container-xs pl-0 p-0 m-0">
-            <img id="gem1" src="assets/images/images (1).jpeg" alt="..." class="rounded p-3">
-            <img id="gem2" src="assets/images/images.jpeg" alt="..." class="rounded p-3">
-            <img id="gem3" src="assets/images/images (3).jpeg" alt="..." class="rounded p-3">
-            <img id="gem4" src="assets/images/images (2).jpeg" alt="..." class="rounded p-3">
+        <div class="container-lg mx-auto m-3 container-xs pl-1 p-0 m-0">
+            <input class="gem-btn p-2" type="image" src="assets/images/images (1).jpeg">
+            <input class="gem-btn p-2" type="image" src="assets/images/images.jpeg">
+            <input class="gem-btn p-2" type="image" src="assets/images/images (3).jpeg">
+            <input class="gem-btn p-2" type="image" src="assets/images/images (2).jpeg">
         </div>  
 
 
