@@ -7,6 +7,8 @@
     <title>Crystal Collector Game</title>
     <!--css stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--reset.css-->
@@ -21,32 +23,32 @@
 
 <body>
     <!--Title-->
-    <div class="shadow container-sm title-cont mx-auto p-3 col-8-sm bg-danger text-center text-white">
+    <div class="container-sm title-cont mx-auto p-3 col-8-sm bg-danger text-center text-white">
         <h1>Crystal Collector</h1>
     </div>
 
       <!--Instructions and start button-->
-      <div class="container-sm inst-cont p-3 col-8-sm text-white">
-        <h5>You will be given a random number at the start of the game.</h5>
+      <div class="container-sm inst-cont bg-secondary p-3 col-8-sm text-white">
+        <h5>You will be given a "Score to Match" at the start of the game.</h5>
         <br>
-        <h5>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</h5>
+        <h5>There are four crystals below. The value for each crystal is hidden from you until you click on it.</h5>
         <br>
-        <h5>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</h5>
+        <h5>By clicking on a crystal, you will add a specific amount of points to your total score.</h5>
         <br>
-        <h5>The value for each crystal is hidden from you until you click on it.</h5>
+        <h5>You win the game by matching your total score to the score to match. You lose the game if your total score goes above it.</h5>
         <br>
-        <h5>Crytal values will change at the start of each new game.</h5>
+        <h5>Crystal values will change at the start of each new game or when reset.</h5>
         <br>
         <h5>Good Luck!</h5>
         <br>   
-        <button id="reset-btn" class="btn btn-warning">Reset</button>  
+        <button id="reset-btn" class="shadow btn btn-warning">Reset</button>  
       </div>
         
         
-        <div class="shadow container-sm bd-highlight">
+        <div class="container-sm">
           <div class="row row-1">
                 <!--Random number-->
-                <div class="col-4 randNum p-3 bg-info text-white text-center">
+                <div class="col-4 randNum p-3 text-white text-center">
                     <h5>Score to Match</h5>
                     <h1><span id="randNum-display">0</span></h1>
                     </div>
@@ -56,7 +58,7 @@
                     <h1><span id="score-display">0</span></h1>
                     </div>
                 <!--Win Loss-->
-                <div class="col-4 winLoss p-3 bg-warning text-left">
+                <div class="col-4 winLoss p-3 m-0 bg-warning text-left">
                     <h5>Wins: <span id="wins-display">0</span></h5>
                     <br>
                     <h5>Losses: <span id="loss-display">0</span></h5>

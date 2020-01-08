@@ -1,5 +1,33 @@
-.container-sm {
-    background: gray;
+.title-cont {
+    border: 3px solid rgb(20, 9, 44);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.inst-cont {
+    border-right: 3px solid rgb(20, 9, 44);
+    border-left: 3px solid rgb(20, 9, 44);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.randNum {
+    background-color: rgb(97, 65, 139);
+    border: 3px solid rgb(20, 9, 44);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.yourScore {
+    border-top: 3px solid rgb(20, 9, 44);
+    border-bottom: 3px solid rgb(20, 9, 44);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.winLoss {
+    border: 3px solid rgb(20, 9, 44);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    border: rgb(20, 9, 44);
 }
 
 .container-gem {
