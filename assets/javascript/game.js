@@ -1,7 +1,5 @@
- // runs on page load ?????
- // window.onload = function() {
    
- // vars for win , loss , score 
+// vars for win , loss , score 
  var winCount = 0;
  var lossCount = 0;
  var score = 0;
@@ -18,7 +16,7 @@
  var randNumText = $("#randNum-display");
  var scoreText = $("#score-display");
 
- // change wins , losses , score and randNum for score to match
+// change wins , losses , score and randNum for score to match
  winCountText.text(winCount);
  lossCountText.text(lossCount);
  randNumText.text(randNum);
@@ -27,8 +25,12 @@
 
     // reset when game is over
     function reset() {
-        randNum = Math.floor(Math.random() * (102)) + 19;
-        gemNum = Math.floor(Math.random() * (12)) + 1;
+    randNum = Math.floor(Math.random() * (102)) + 19;
+    // establish gem numbers 1-12
+    $(".gem-btn").each(function(){
+            var gemNum = Math.floor(Math.random() * (12)) + 1;
+            $(this).attr("gem-value", gemNum); 
+    }) 
         winCountText.text(winCount);
         lossCountText.text(lossCount);
         randNumText.text(randNum);
@@ -39,7 +41,11 @@
     // button to reset for restarting game and resetting values
     $("#reset-btn").on("click", function() {
         randNum = Math.floor(Math.random() * (102)) + 19;
-        gemNum = Math.floor(Math.random() * (12)) + 1;
+         // establish gem numbers 1-12
+         $(".gem-btn").each(function(){
+            var gemNum = Math.floor(Math.random() * (12)) + 1;
+            $(this).attr("gem-value", gemNum); 
+        }) 
         winCount = 0;
         winCountText.text(winCount);
         lossCount = 0;
@@ -47,18 +53,12 @@
         randNumText.text(randNum);
         score = 0;
         scoreText.text(score);
-        });
+    });
        
 
-    $(document).ready(function() {
+$(document).ready(function() {
+                reset();
 
-    
-        // establish gem numbers 1-12
-        $(".gem-btn").each(function(){
-            var gemNum = Math.floor(Math.random() * (12)) + 1;
-            $(this).attr("gem-value", gemNum); 
-        }) 
-       
         // using gem numbers from above to generate score
         $(".gem-btn").on("click",function() {
             score = score + parseInt($(this).attr("gem-value"));
