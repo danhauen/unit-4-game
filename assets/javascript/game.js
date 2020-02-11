@@ -41,8 +41,8 @@
     // button to reset for restarting game and resetting values
     $("#reset-btn").on("click", function() {
         randNum = Math.floor(Math.random() * (102)) + 19;
-         // establish gem numbers 1-12
-         $(".gem-btn").each(function(){
+        // establish gem numbers 1-12
+        $(".gem-btn").each(function(){
             var gemNum = Math.floor(Math.random() * (12)) + 1;
             $(this).attr("gem-value", gemNum); 
         }) 
